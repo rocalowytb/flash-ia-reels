@@ -295,7 +295,7 @@ def scene_cta(t):
     out.append((L, appear(t, 28.15, 0.3), 0, 0.6 + 0.4 * ease_back((t - 28.15) / 0.45), 0))
     T = layer(); td = ImageDraw.Draw(T)
     text_center(td, TOP + 420, "ABONNE-TOI", font(F_TITLE, 120), WHITE)
-    text_center(td, TOP + 570, "@flash.ia_reseau", font(F_BOLD, 64), YEL)
+    text_center(td, TOP + 570, "@flash.ia_actu", font(F_BOLD, 64), YEL)
     text_center(td, TOP + 670, "L'actu IA & réseaux en 30 s", font(F_SEMI, 46), GREY)
     out.append((T, appear(t, 28.4, 0.35), (1 - appear(t, 28.4, 0.35)) * 50, 1.0, 0))
     return out

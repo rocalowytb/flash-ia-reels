@@ -62,7 +62,7 @@ d.ellipse([cx - 130, cy - 130, cx + 130, cy + 130], fill=YEL); bolt(d, cx, cy, 1
 y = rich_lines(d, 0, 520, [[("ENVOIE-LE", YEL)], [("À UN CRÉATEUR", WHITE)]], f(F_TITLE, 100), 124, W, True)
 ft = f(F_BOLD, 48)
 y = rich_lines(d, 0, y + 30, [[("et enregistre-le pour plus tard", WHITE)]], ft, 64, W, True)
-y = rich_lines(d, 0, y + 50, [[("Abonne-toi : ", GREY), ("@flash.ia_reseau", YEL)]], ft, 64, W, True)
+y = rich_lines(d, 0, y + 50, [[("Abonne-toi : ", GREY), ("@flash.ia_actu", YEL)]], ft, 64, W, True)
 fs = f(F_SEMI, 30)
 for i, src in enumerate(["Sources : Instagram (A. Mosseri, T. Lyons), Business Insider,", "Mashable, The Next Web · 26 oct.–1er nov. 2026"]):
     d.text(((W - d.textlength(src, font=fs)) / 2, H - 200 + i * 42), src, font=fs, fill=GREY)

@@ -53,7 +53,7 @@ def wrap(d, text, font, maxw):
 
 def footer(d, W, H, n, total, src=None):
     fs = f(F_SEMI, 30)
-    d.text((70, H - 90), "@flash.ia_reseau", font=fs, fill=GREY)
+    d.text((70, H - 90), "@flash.ia_actu", font=fs, fill=GREY)
     t = f"{n}/{total}"
     d.text((W - 70 - d.textlength(t, font=fs), H - 90), t, font=fs, fill=GREY)
     if src:
@@ -116,7 +116,7 @@ d.ellipse([cx - 130, cy - 130, cx + 130, cy + 130], fill=YEL); bolt(d, cx, cy, 1
 y = rich_lines(d, 0, 520, [[("ENREGISTRE", YEL)], [("CE POST", WHITE)]], f(F_TITLE, 110), 130, W, True)
 ft = f(F_BOLD, 48)
 y = rich_lines(d, 0, y + 30, [[("et envoie-le à un pote créateur", WHITE)]], ft, 64, W, True)
-y = rich_lines(d, 0, y + 50, [[("Abonne-toi : ", GREY), ("@flash.ia_reseau", YEL)]], ft, 64, W, True)
+y = rich_lines(d, 0, y + 50, [[("Abonne-toi : ", GREY), ("@flash.ia_actu", YEL)]], ft, 64, W, True)
 fs = f(F_SEMI, 30)
 for i, src in enumerate(["Sources : Adam Mosseri / Instagram,", "Social Media Today, Blog du Modérateur"]):
     d.text(((W - d.textlength(src, font=fs)) / 2, H - 200 + i * 42), src, font=fs, fill=GREY)
