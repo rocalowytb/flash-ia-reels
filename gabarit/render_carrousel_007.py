@@ -65,7 +65,7 @@ d.ellipse([cx - 130, cy - 130, cx + 130, cy + 130], fill=YEL); bolt(d, cx, cy, 1
 y = rich_lines(d, 0, 520, [[("ENVOIE-LE", YEL)], [("AU POTE QUI POSTE", WHITE)], [("AVEC CHATGPT", WHITE)]], f(F_TITLE, 84), 104, W, True)
 ft = f(F_BOLD, 48)
 y = rich_lines(d, 0, y + 30, [[("et enregistre-le avant ton prochain post", WHITE)]], ft, 64, W, True)
-y = rich_lines(d, 0, y + 40, [[("Abonne-toi : ", GREY), ("@flash.ia_reseau", YEL)]], ft, 64, W, True)
+y = rich_lines(d, 0, y + 40, [[("Abonne-toi : ", GREY), ("@flash.ia_actu", YEL)]], ft, 64, W, True)
 fs = f(F_SEMI, 30)
 for i, src in enumerate(["Sources : LinkedIn (Tim Jurka, VP Engineering),", "CNN, SocialDay · oct.-nov. 2026"]):
     d.text(((W - d.textlength(src, font=fs)) / 2, H - 200 + i * 42), src, font=fs, fill=GREY)

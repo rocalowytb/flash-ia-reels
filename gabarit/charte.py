@@ -53,7 +53,7 @@ def wrap(d, text, font, maxw):
 
 def footer(d, W, H, n, total, src=None):
     fs = f(F_SEMI, 30)
-    d.text((70, H - 90), "@flash.ia_reseau", font=fs, fill=GREY)
+    d.text((70, H - 90), "@flash.ia_actu", font=fs, fill=GREY)
     t = f"{n}/{total}"
     d.text((W - 70 - d.textlength(t, font=fs), H - 90), t, font=fs, fill=GREY)
     if src:
